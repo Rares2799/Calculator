@@ -1,0 +1,127 @@
+﻿<Window x:Class="copie_calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:copie_calculator"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="Calculator" Height="700" Width="500" Background="DimGray"
+        KeyDown="KeyInput"
+        xml:lang="en-US"
+        Icon="Icon.ico">
+
+
+
+    <Grid>
+        <StackPanel>
+            <Grid Background="Black" Height="194" VerticalAlignment="Top" Margin="0,-2,-0.4,0">
+
+                <Menu Height="40" Name="menu1" Width="40" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Black" >
+                    <Menu.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <DockPanel HorizontalAlignment="Stretch"/>
+                        </ItemsPanelTemplate>
+                    </Menu.ItemsPanel>
+                    <MenuItem Header="≡" Foreground="White" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" Width="40" Height="40">
+                        <MenuItem Header="_About" Foreground="Black" FontSize="10" Click="About" />
+                        <MenuItem Header="File" Foreground="Black" FontSize="10">
+                            <MenuItem x:Name="Cut" Foreground="Black" Header="Cut"  Click="Cut_Click" />
+                            <MenuItem x:Name="Copy" Foreground="Black" Header="Copy"  Click="Copy_Click" />
+                            <MenuItem x:Name="Paste" Foreground="Black" Header="Paste"  Click="Paste_Click"/>
+                            <MenuItem x:Name="DigitGrouping" Foreground="Black" Header="Digit Grouping">
+
+                                <Button Tag="en-US" Foreground="Black" HorizontalAlignment="Stretch" >English(US)</Button>
+                                
+                            </MenuItem>
+                        </MenuItem>
+                    </MenuItem>
+                        
+                </Menu>
+                <StackPanel VerticalAlignment="Bottom">
+                    <TextBox Name="txtdisplay" IsReadOnly="True" FontSize="50" FontFamily="Oswald" Text="0" TextAlignment="Right" BorderThickness="0"
+                       Foreground="White" Background="Black" Margin="10 0" TextWrapping="Wrap" >
+                        
+                    </TextBox>
+                    <Grid Height="45">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                        </Grid.RowDefinitions>
+
+                        <Button x:Name="btnMC" Grid.Row="0" Grid.Column="0" Background="OrangeRed" Foreground="White" FontSize="25" Margin="0,0,-0.4,-1" Click="btnMC_Click">MC</Button>
+                        <Button x:Name="btnMR" Grid.Row="0" Grid.Column="1" Background="OrangeRed" Foreground="White" FontSize="25" Margin="0,0,-0.4,-1" Click="btnMR_Click">MR</Button>
+                        <Button x:Name="btnMP" Grid.Row="0" Grid.Column="2" Background="OrangeRed" Foreground="White" FontSize="25" Margin="0,0,-0.4,-1" Click="btnMP_Click">M+</Button>
+                        <Button x:Name="btnMM" Grid.Row="0" Grid.Column="3" Background="OrangeRed" Foreground="White" FontSize="25" Margin="0,0,-0.4,-1" Click="btnMM_Click">M-</Button>
+                        <Button x:Name="btnMS" Grid.Row="0" Grid.Column="4" Background="OrangeRed" Foreground="White" FontSize="25" Margin="0,0,-0.4,-1" Click="btnMS_Click">MS</Button>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+            <Grid Height="480" VerticalAlignment="Bottom" Margin="0,-4.0,-0.4,0">
+
+
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                </Grid.RowDefinitions>
+
+                <!--Numbers-->
+
+                <Button x:Name="btn7" Background="DimGray" Foreground="White" Grid.Row="2" Grid.Column="0" FontSize="25" Margin="0,0,-0.4,1" Click="btn1_Click">7</Button>
+                <Button x:Name="btn8" Background="DimGray" Foreground="White" Grid.Row="2" Grid.Column="1" FontSize="25" Margin="0,0,-0.4,1" Click="btn1_Click">8</Button>
+                <Button x:Name="btn9" Background="DimGray" Foreground="White" Grid.Row="2" Grid.Column="2" FontSize="25" Margin="0,0,-0.4,1" Click="btn1_Click">9</Button>
+                <Button x:Name="btn4" Background="DimGray" Foreground="White" Grid.Row="3" Grid.Column="0" FontSize="25" Margin="0,0,-0.4,1" Click="btn1_Click">4</Button>
+                <Button x:Name="btn5" Background="DimGray" Foreground="White" Grid.Row="3" Grid.Column="1" FontSize="25" Margin="0,0,-0.4,1" Click="btn1_Click">5</Button>
+                <Button x:Name="btn6" Background="DimGray" Foreground="White" Grid.Row="3" Grid.Column="2" FontSize="25" Margin="0,0,-0.4,1" Click="btn1_Click">6</Button>
+                <Button x:Name="btn3" Background="DimGray" Foreground="White" Grid.Row="4" Grid.Column="0" FontSize="25" Margin="0,0,-0.4,1" Click="btn1_Click">3</Button>
+                <Button x:Name="btn2" Background="DimGray" Foreground="White" Grid.Row="4" Grid.Column="1" FontSize="25" Margin="0,0,-0.4,1" Click="btn1_Click">2</Button>
+                <Button x:Name="btn1" Background="DimGray" Foreground="White" Grid.Row="4" Grid.Column="2" FontSize="25" Margin="0,0,-0.4,1" Click="btn1_Click">1</Button>
+                <Button x:Name="btn0" Background="DimGray" Foreground="White" Grid.Row="5" Grid.Column="1" FontSize="25" Margin="0,0,-0.4,1" Click="btn1_Click">0</Button>
+
+                <Button x:Name="btn1x" Grid.Row="1" Grid.Column="0" Background="Orange" Foreground="White" FontSize="25" Margin="0,0,-0.4,1" Click="btn1x_Click">⅟x</Button>
+                <Button x:Name="btnx2" Grid.Row="1" Grid.Column="1" Background="Orange" Foreground="White" FontSize="25" Margin="0,0,-0.4,1" Click="btnx2_Click">x²</Button>
+                <Button x:Name="btnrad" Grid.Row="1" Grid.Column="2" Background="Orange" Foreground="White" FontSize="25" Margin="0,0,-0.4,1" Click="btnrad_Click">√x</Button>
+                <Button x:Name="btnmod" Grid.Row="0" Grid.Column="0" Background="Orange" Foreground="White" FontSize="25" Margin="0,0,-0.4,1" Click="btnmod_Click">%</Button>
+                <Button x:Name="btnCE" Grid.Row="0" Grid.Column="1" Background="Orange" Foreground="White" FontSize="25" Margin="0,0,-0.4,1" Click="btnCE_Click">CE</Button>
+                <Button x:Name="btnC" Grid.Row="0" Grid.Column="2" Background="Orange" Foreground="White" FontSize="25" Margin="0,0,-0.4,1" Click="btnC_Click">C</Button>
+                <Button x:Name="btnback" Grid.Row="0" Grid.Column="4" Background="Orange" Foreground="White" FontSize="25" Margin="0,0,-0.4,1" Click="btnback_Click">⌫</Button>
+                <Button x:Name="btndiv" Grid.Row="1" Grid.Column="4" Background="Orange" Foreground="White" FontSize="35" Margin="0,0,-0.4,1" Click="btndiv_Click">÷</Button>
+                <Button x:Name="btnx" Grid.Row="2" Grid.Column="4" Background="Orange" Foreground="White" FontSize="35" Margin="0,0,-0.4,1" Click="btnx_Click">×</Button>
+                <Button x:Name="btnm" Grid.Row="3" Grid.Column="4" Background="Orange" Foreground="White" FontSize="35" Margin="0,0,-0.4,1" Click="btnm_Click">−</Button>
+                <Button x:Name="btnp" Grid.Row="4" Grid.Column="4" Background="Orange" Foreground="White" FontSize="35" Margin="0,0,-0.4,1" Click="btnp_Click">+</Button>
+                <Button x:Name="btne" Grid.Row="5" Grid.Column="4" Background="Orange" Foreground="White" FontSize="35" Margin="0,0,-0.4,1" Click="btne_Click">=</Button>
+
+                <Button x:Name="btnpm" Background="Gray" Foreground="White" Grid.Row="5" Grid.Column="0" FontSize="25" Margin="0,0,-0.4,1" Click="btnpm_Click">+/-</Button>
+                <Button x:Name="btnpct" Background="Gray" Foreground="White" Grid.Row="5" Grid.Column="2" FontSize="25" Margin="0,0,-0.4,1" Click="btnpct_Click">.</Button>
+
+
+
+
+            </Grid>
+        </StackPanel>
+        <!--<Button Content="Button" HorizontalAlignment="Left" Margin="409,0,0,0" VerticalAlignment="Top" Width="75" Click="notifyIcon_DoubleClick"/>-->
+
+    </Grid>
+</Window>
+    

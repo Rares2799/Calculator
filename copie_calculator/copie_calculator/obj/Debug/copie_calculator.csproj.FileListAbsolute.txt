@@ -1,0 +1,16 @@
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\bin\Debug\copie_calculator.exe.config
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\bin\Debug\copie_calculator.exe
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\bin\Debug\copie_calculator.pdb
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\copie_calculator.csprojAssemblyReference.cache
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\MainWindow.g.cs
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\App.g.cs
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\copie_calculator_MarkupCompile.cache
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\copie_calculator_MarkupCompile.lref
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\MainWindow.baml
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\copie_calculator.g.resources
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\copie_calculator.Properties.Resources.resources
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\copie_calculator.csproj.GenerateResource.cache
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\copie_calculator.exe
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\copie_calculator.pdb
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\About.g.cs
+D:\Facultate\An2Sem2\MVP\copie_calculator\copie_calculator\obj\Debug\About.baml
